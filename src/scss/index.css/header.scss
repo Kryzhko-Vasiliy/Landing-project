@@ -1,0 +1,94 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+@media (max-width:479px){
+  .header__container{
+    min-height: 70px;
+  }
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+}
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+@media (max-width:992px){
+  .header__menu{
+  margin: 0px 0px 0px 80px;
+  }
+}
+@media (max-width:767px){
+  .header__menu{
+  margin: 0px 0px 0px 40px;
+  }
+}
+@media (max-width:479px){
+  .header__menu{
+  margin: 0px 0px 0px 20px;
+  }
+}
+.menu {
+  padding: 5px 0px;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_item {
+}
+.menu_item:not(:last-child){
+    padding: 0px 21px 0px 0px;
+}
+.menu_link {
+    color:grey;
+    line-height: calc(24/14 *100%);
+    font-weight: 600;
+}
+.menu_link:hover {
+  text-decoration: underline;
+}
+@media (max-width:479px){
+  .menu_link{
+    font-size: 18px;
+  } 
+}
+
+/*---------------------------------------------------HEADER-BLOCK ДЛЯ ВСЕХ ОСТАЛЬНЫХ СТИЛЕЙ ПОД ADVANTAGES----*/
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.header-block__title {
+  line-height: 142%;
+  font-size: 40px;
+  font-weight: 700;
+}
+@media (max-width:992px){
+  .header-block__title{
+    font-size: 35px;
+  } 
+}
+@media (max-width:767px){
+  .header-block__title{
+    font-size: 30px;
+  } 
+}
+.header-block__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+  color: gray;
+  line-height: 142%;
+  padding: 0px 0px 20px 0px;
+}
